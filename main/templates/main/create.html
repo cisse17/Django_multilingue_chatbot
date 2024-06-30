@@ -1,0 +1,16 @@
+{% extends 'main/base.html'%}
+
+{% block title %} 
+<title>Ajouter un article</title>
+{% endblock %}
+
+{% block content %}
+<section id="blog">
+<h1>Creer un article </h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="créer" class="btn-lire  btn-submit">
+    </form>
+</section>
+{% endblock %}

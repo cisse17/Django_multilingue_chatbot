@@ -1,7 +1,7 @@
 
 from django.contrib import admin
 from django.urls import path, include
-# from django.contrib.staticfiles.urls import staticfiles_urlpatterns # file static for deployement 
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns # file static for deployement 
 
 from django.conf.urls.i18n import i18n_patterns
 
@@ -15,7 +15,7 @@ urlpatterns = i18n_patterns(
     prefix_default_language=False # l' URL pour la langue par défaut ne seront pas préfixée avec le code de langue
 )
 
-
+urlpatterns += staticfiles_urlpatterns()
 
 
 
