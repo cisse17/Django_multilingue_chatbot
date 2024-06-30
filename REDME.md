@@ -102,7 +102,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
     OPENAI_API_KEY=votre_cle_api_openai
 
 ## NB : Utilisation de chatgpt
-- Ce projet m'a pris à peu prés 7h30 de temps de travail selon mes disponibilités y compris la rédaction du doc. Mais En cas de probléme pour l'installation de gettext, probléme clé API, probléme de l'utilisation de django-parler, probléme de traduction  ou tout autre bug pensez revoir votre code et pour l'optimiser ou à utiliser chatgtp pour apporter des solutions mais comment l'utiliser pour avoir des réponses précises ? ceci dépend de toute personne. Important, Si c'est votre premiére fois vous réaliser ce genre de projet pensez à prendre ces suggestions pour eviter de prendre ce temps de travail.
+- Ce projet m'a pris à peu prés 7h30 de temps de travail selon mes disponibilités y compris la rédaction du doc. Mais En cas de probléme pour l'installation de gettext, probléme clé API, probléme de l'utilisation de django-parler, probléme de traduction  ou tout autre bug pensez à revoir votre code pour l'optimiser ou à utiliser chatgpt pour apporter des solutions mais comment l'utiliser pour avoir des réponses précises ? ceci dépend de toute personne. Important, Si c'est votre premiére fois vous réalisez ce genre de projet pensez à prendre ces suggestions pour eviter de prendre ce temps de travail et surtout pensez à prendre des pauses de reflexions en cas de blocage.
 
 - [lien du projet multilingue site chatbot](https://diotsiacichatbot.pythonanywhere.com/) 
 
