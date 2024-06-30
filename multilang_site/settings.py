@@ -18,7 +18,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['diotsiacimultilinguesite.pythonanywhere.com', '127.0.0.1']
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
@@ -182,3 +182,10 @@ PARLER_LANGUAGES = {
     }
 }"""
 
+
+# /home/diotsiacimultilinguesite/multilang_site
+
+
+
+
+# /home/diotsiacichatbot/multilang_site
