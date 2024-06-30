@@ -106,6 +106,8 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 - [lien du projet multilingue site chatbot](https://diotsiacichatbot.pythonanywhere.com/) 
 
+- [Gestion du projet multilingue](https://trello.com/invite/b/rSJgJD7w/ATTI0bcd425dd6271c0e7ecf9975a82ece73B7F02773/conduite-de-projet-multilingue-diotsiaci)
+
 ## Assurez-vous de remplacer les placeholders comme `votre-utilisateur`, `votre-repo`, et `votre_cle_api_openai` par les informations réelles de votre projet. Ce fichier `README.md` offre des instructions détaillées pour installer, configurer et exécuter votre application Django. 
 
 
