@@ -1,0 +1,18 @@
+{% extends 'main/base.html'%}
+
+{% block title %} 
+<title>{{ article.titre }}</title>
+{% endblock %}
+
+{% block content %}
+<a href="{% url 'index' %}" style="margin-left: 30px; border: solid 3px; border-radius: 5px; text-decoration: none; color: white; background-color: #004686; padding: 10px;   ">Retour a l'accueil</a>
+<section id="blog">
+        
+<article class="post-detail">
+       
+        <h4>{{ articles.titre }}</h4>
+        <div class="container">{{ articles.content|linebreaks|safe}}</div>
+</article>
+</section>
+
+{% endblock %}

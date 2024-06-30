@@ -1,0 +1,74 @@
+{% load i18n %}
+<header>
+<nav  class="navbar  navbar-expand-lg shadow p-3  bg-body-tertiary rounded ">
+
+    <div class="container-fluid">
+      <a class="navbar-brand"  href="{% url 'index' %}"><b>DiotSiaci</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="{% url 'index' %}">{% trans 'Accueil' %}</a>
+          </li>
+          
+         
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'chatbot'%}">AI Chatbot</a>
+          </li> 
+          
+          {% if request.user.is_authenticated %}
+         
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'deconnexion'%}">{% trans 'Déconnexion' %} </a>
+          </li>  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          <li class="nav-item ">
+            <a class="nav-link" >{% trans 'Bienvenu' %} <b>{{request.user.username}}</b></a>
+          </li> 
+
+          {% else %}
+           
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'connexion'%}">{% trans 'Connexion' %} </a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link " href="{% url 'inscription'%}">{% trans 'Inscription' %} </a>
+          </li>
+          {% endif %}
+        </ul>
+      
+        
+        <ul>        
+          <div class="dropdown me-auto">
+              {% get_current_language as CURRENT_LANGUAGE %}
+              {% get_available_languages as AVAILABLE_LANGUAGES %}
+              {% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+
+
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {% trans "Changer la langue" %}
+            </button>
+            <ul class="dropdown-menu">
+              {% for language in languages %}
+                  <li>
+                    <a class="dropdown-item {% if language.code == CURRENT_LANGUAGE %}active{% endif %}" href="{% if language.code == 'fr' %}/{% else %}/{{ language.code }}/{% endif%}">{{ language.name_local }}</a>
+                  </li>
+              {% endfor %}
+
+            </ul>
+       
+          </div>
+         
+        </ul>
+
+       
+   
+
+      </div>
+    </div>
+  </nav>
+
+</header> 
+
+

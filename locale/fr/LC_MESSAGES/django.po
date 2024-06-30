@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-29 22:41+0200\n"
+"PO-Revision-Date: 2024-06-30 00:33+0000\n"
+"Last-Translator:   <basse@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\chatbot\templates\chatbot\chatbot.html:16
+msgid "Posez lui votre question ou votre message ici"
+msgstr ""
+
+#: .\chatbot\templates\chatbot\chatbot.html:18
+msgid "Envoyer"
+msgstr "Envoyer"
+
+#: .\chatbot\views.py:20
+msgid "Le message est manquant ou vide."
+msgstr ""
+
+#: .\chatbot\views.py:30
+msgid "Vous êtes un assistant utile."
+msgstr ""
+
+#: .\main\models.py:11
+msgid "Titre"
+msgstr "Titre"
+
+#: .\main\models.py:12
+msgid "Contenu"
+msgstr "Contenu"
+
+#: .\main\models.py:19
+msgid "Article"
+msgstr ""
+
+#: .\main\models.py:20
+msgid "Articles"
+msgstr ""
+
+#: .\main\templates\main\connexion.html:8 .\main\templates\main\navbar.html:35
+msgid "Connexion"
+msgstr "Connexion"
+
+#: .\main\templates\main\connexion.html:20
+msgid "Nom d'utilisateur"
+msgstr "Nom d'utilisateur"
+
+#: .\main\templates\main\connexion.html:22
+msgid "Mot de passe"
+msgstr "Mot de passe"
+
+#: .\main\templates\main\connexion.html:24
+#: .\main\templates\main\inscription.html:12
+msgid "Se connecter"
+msgstr "Se connecter"
+
+#: .\main\templates\main\connexion.html:26
+msgid "Pas encore inscrit ?"
+msgstr "Pas encore inscrit ?"
+
+#: .\main\templates\main\connexion.html:26
+msgid "S'inscrire "
+msgstr "S'inscrire"
+
+#: .\main\templates\main\index.html:7
+msgid "Bienvenu sur mon blog"
+msgstr "Bienvenu sur votre site de blog des professionnels du numérique"
+
+#: .\main\templates\main\index.html:14
+msgid "Publié le"
+msgstr "Published on"
+
+#: .\main\templates\main\index.html:20
+#, fuzzy
+#| msgid "LireArticle"
+msgid "Lire l'article"
+msgstr "Lire l'article"
+
+#: .\main\templates\main\inscription.html:8
+msgid "Creer un compte "
+msgstr "Créer un compte"
+
+#: .\main\templates\main\inscription.html:10
+msgid "S'inscrire"
+msgstr "S'inscrire"
+
+#: .\main\templates\main\inscription.html:12
+msgid "Déjà inscrit ?"
+msgstr "Déjà inscrit ?"
+
+#: .\main\templates\main\navbar.html:14
+msgid "Accueil"
+msgstr "Accueil"
+
+#: .\main\templates\main\navbar.html:25
+msgid "Déconnexion"
+msgstr "Déconnexion"
+
+#: .\main\templates\main\navbar.html:29
+msgid "Bienvenu"
+msgstr "Bienvenu(e)"
+
+#: .\main\templates\main\navbar.html:38
+msgid "Inscription"
+msgstr "Inscription"
+
+#: .\main\templates\main\navbar.html:53
+msgid "Changer la langue"
+msgstr "Changer la langue"
+
+#: .\multilang_site\settings.py:110
+msgid "Anglais"
+msgstr "Anglais"
+
+#: .\multilang_site\settings.py:111
+msgid "Français"
+msgstr "Français"
+
+#~ msgid "navbarhome"
+#~ msgstr "Accueil"
+
+#~ msgid "English"
+#~ msgstr "Anglais"

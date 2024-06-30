@@ -1,0 +1,88 @@
+{% extends 'main/base.html'%}
+{% load i18n %}
+
+{% block content %}
+<div class="chat-container ">
+  <div class="card flex-grow-1">
+    <div class="card-header bg-dark text-white">AI Chat </div>
+    <div class="card-body messages-box">
+      <ul class="list-unstyled messages-list"></ul>
+    </div>
+  </div>
+  <form class="message-form">
+    {% csrf_token %}
+    <div class="input-group">
+      <input type="text" name="message" class="form-control message-input" placeholder=" Posez lui votre question ou votre message ici..." >
+      <div class="input-group-append" >
+        <button type="submit" class="btn bg-dark text-white "  >{% trans 'Envoyer' %}</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+    const messagesList = document.querySelector('.messages-list');
+    const messageForm = document.querySelector('.message-form');
+    const messageInput = document.querySelector('.message-input');
+
+    messageForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        
+        const message = messageInput.value.trim();
+        if (message.length === 0) {
+            return;
+        }
+
+        const messageItem = document.createElement('li');
+        messageItem.classList.add('message', 'sent');
+        messageItem.innerHTML = `
+            <div class="message-text">
+                <div class="message-sender">
+                    <b>Vous</b>
+                </div>
+                <div class="message-content">
+                    ${message}
+                </div>
+            </div>`;
+        messagesList.appendChild(messageItem);
+
+        messageInput.value = '';
+
+        fetch('', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+            },
+            body: new URLSearchParams({
+                'message': message
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.response) {
+                const responseItem = document.createElement('li');
+                responseItem.classList.add('message', 'recevoir');
+                responseItem.innerHTML = `
+                <div class="message-text">
+                    <div class="message-sender">
+                        <b>AI Chatbot</b>
+                    </div>
+                    <div class="message-content">
+                        ${data.response}
+                    </div>
+                </div>`;
+                messagesList.appendChild(responseItem);
+            } else {
+                alert(data.error || 'Une erreur s\'est produite');
+            }
+        })
+        .catch(error => {
+            alert('Une erreur s\'est produite');
+            console.error('Error:', error);
+        });
+    });
+</script>
+
+
+{% endblock %}

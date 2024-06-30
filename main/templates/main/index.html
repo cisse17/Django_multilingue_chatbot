@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% load l10n %}
+{% block content%}
+
+<section id="blog">
+    <h2 class="text-center">{% trans 'Bienvenu sur mon blog' %}</h2> 
+
+{% for post in posts %}  
+<article>
+
+
+    <h4>{{ post.titre }}</h4>
+    <h6 class="post-date">{% trans 'Publié le' %} {{post.publication_date|date:'j F Y' }} </h6>
+   
+    <p class="post-excerpt">{{ post.content|safe|truncatewords:50 }}</p>
+
+
+    <form action="{% url 'detail-article' post.pk %}">
+        <button class="btn-lire btn-submit"> {% trans "Lire l'article" %}</button>
+    </form>
+   
+</article>
+{% endfor %}
+   
+
+
+
+{% endblock %}
+</section>
+
+

@@ -1,0 +1,86 @@
+{% extends 'main/base.html' %}
+{% load i18n %}
+{% block content %}
+  <div class="container">
+      <div class="form">
+          <form method="post" action="{% url 'inscription' %}">
+              {% csrf_token %}
+              <h1>{% trans 'Creer un compte ' %} </h1>
+              {{ form.as_p }}    
+              <button type="submit" id="btn-envoyer"> {% trans "S'inscrire" %} </button>
+          </form>
+          <p class="link">{% trans 'Déjà inscrit ?' %} <a href="{% url 'connexion' %}">{% trans 'Se connecter' %}</a></p>
+      </div>
+  </div>  <br>    
+
+
+
+
+
+
+<style>
+ 
+
+  .container {
+      width: 400px;
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .container .form {
+      padding: 30px;
+  }
+
+  label {
+      padding: 10px 0;
+      color: #004686;
+  }
+
+  input {
+      width: 100%;
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      outline: none;
+      margin-bottom: 15px;
+      margin-top: 10px;
+  }
+
+
+  #btn-envoyer {
+        color: #fff;
+        background: #004686;
+        width: 100%;
+        padding: 10px;
+        font-size: 17px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 6px;
+        outline: none;
+    }
+
+    #btn-envoyer:hover {
+        background: #004686;
+    } 
+
+  .link {
+      text-align: center;
+      margin-top: 20px;
+      color: #004686;
+  }
+  .link a {
+    text-decoration: none;
+  }
+  .erreur {
+        color: #c83535;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+ 
+</style>
+{% endblock %}
