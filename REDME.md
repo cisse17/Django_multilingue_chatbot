@@ -108,6 +108,8 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 - [Gestion du projet multilingue](https://trello.com/invite/b/rSJgJD7w/ATTI0bcd425dd6271c0e7ecf9975a82ece73B7F02773/conduite-de-projet-multilingue-diotsiaci)
 
+- [Mes impréssions et compétences sur la réalisation de ce projet](https://docs.google.com/document/d/1wN9vfcqZ-mmyR1NrgX_i5IBHMWMfEsQ-IRiUCxEuGwU/edit#heading=h.uncwpjy325ei)
+
 ## Assurez-vous de remplacer les placeholders comme `votre-utilisateur`, `votre-repo`, et `votre_cle_api_openai` par les informations réelles de votre projet. Ce fichier `README.md` offre des instructions détaillées pour installer, configurer et exécuter votre application Django. 
 
 
