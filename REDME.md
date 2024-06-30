@@ -31,46 +31,42 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 - Tapez ces commandes 
 
-  ```python -m venv env 
+- python -m venv env 
 
-- Sur mac
-  ```source env/bin/activate
+- source env/bin/activate Sur Windows tapez cette commande avec le nom de votre environnement      virtuel : env\Scripts\activate
 
-- Sur Windows tapez cette commande avec le nom de votre environnement      virtuel : env\Scripts\activate
-
-  ```env\Scripts\activate
 
 ## Installez les dépendances :
 - Ce requirements.txt permet d'installer tous les modules installer pour ce projet
 
-  ```pip install -r requirements.txt
+- pip install -r requirements.txt
 
 
 ## Appliquez les migrations :
--  ```python manage.py migrate
+- python manage.py migrate
 
 
 ## Créez un super utilisateur pour accéder à l'admin Django :
 
--  ```python manage.py createsuperuser
+- python manage.py createsuperuser
 
 ## Vous pouvez collectez les fichiers statiques en tapant cette ligne de commande
 
--  ```python manage.py collectstatic
+- python manage.py collectstatic
 
 ## Internationalisation (i18n)
 1. Créer les fichiers de traduction en tapant ces commandes 
 
--  ```python manage.py makemessages -l fr
--  ```python manage.py makemessages -l en
+- python manage.py makemessages -l fr
+- python manage.py makemessages -l en
 
 2. Compilez les fichiers de traduction :
--  ```python manage.py compilemessages  
+- python manage.py compilemessages  
 
 3. Installation et Utilisation de Rosetta et django-parler :
 
--  ```pip install django-parler
--  ```pip install django-rosetta
+- pip install django-parler
+- pip install django-rosetta
 
 - Ajoutez rosetta et parler à votre fichier INSTALLED_APPS dans settings.py et accédez à /rosetta/ pour gérer les traductions.  
 - Ajoutez rosetta avant dans votre main url: path('rosetta/', include('rosetta.urls')),
@@ -107,6 +103,8 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 ## NB : Utilisation de chatgpt
 - Ce projet m'a pris à peu prés 7h30 de temps de travail selon mes disponibilités y compris la rédaction du doc. Mais En cas de probléme pour l'installation de gettext, probléme clé API, probléme de l'utilisation de django-parler, probléme de traduction  ou tout autre bug pensez revoir votre code et pour l'optimiser ou à utiliser chatgtp pour apporter des solutions mais comment l'utiliser pour avoir des réponses précises ? ceci dépend de toute personne. Important, Si c'est votre premiére fois vous réaliser ce genre de projet pensez à prendre ces suggestions pour eviter de prendre ce temps de travail.
+
+- [lien du projet multilingue site chatbot](https://diotsiacichatbot.pythonanywhere.com/) 
 
 ## Assurez-vous de remplacer les placeholders comme `votre-utilisateur`, `votre-repo`, et `votre_cle_api_openai` par les informations réelles de votre projet. Ce fichier `README.md` offre des instructions détaillées pour installer, configurer et exécuter votre application Django. 
 
