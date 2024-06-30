@@ -67,6 +67,8 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 - pip install django-parler
 - pip install django-rosetta
+- Remarque : vous pouvez utiliser aussi django-modeltranslation. Cette bibliothèque permet de gérer facilement les traductions des champs de vos modèles. Selon votre choix.
+- pip install django-modeltranslation
 
 - Ajoutez rosetta et parler à votre fichier INSTALLED_APPS dans settings.py et accédez à /rosetta/ pour gérer les traductions.  
 - Ajoutez rosetta avant dans votre main url: path('rosetta/', include('rosetta.urls')),
