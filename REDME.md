@@ -114,6 +114,6 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 ## Assurez-vous de remplacer les placeholders comme `votre-utilisateur`, `votre-repo`, et `votre_cle_api_openai` par les informations réelles de votre projet. Ce fichier `README.md` offre des instructions détaillées pour installer, configurer et exécuter votre application Django. 
 
-#### password = Technicaltest2024 username = DiotSiaci someone who want to test the login form you can use this informations for loging to chat with IA chat. if you don't want to put your own informations you can use this username and password. it's not necessary for this register form to put your personal information you can just put wathever you want only respect the required fields.
+#### password = Technicaltest2024 username = DiotSiaci someone who want to test the login form you can use this informations for logging to chat with IA chat. if you don't want to put your own informations you can use this username and password. it's not necessary for this register form to put your personal information you can just put wathever you want only respect the required fields.
 
 
