@@ -55,5 +55,8 @@ def deconnexion(request):
 
 # mdp Technicaltest2024 username = DiotSiaci 
 # someone who want to test the login form you can use this informations for loging to chat with IA chat
+# if you don't want to put your own informations you can use this username and password.
+# it's not necessary for this register form to put your personal information you can just put wathever you want only respect the required fields.
+
 
 
